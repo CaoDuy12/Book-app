@@ -1,0 +1,24 @@
+@import '../../../styles/styles.scss';
+
+.form-group {
+  @include flexbox(flex, flex-start, flex-start, column);
+  row-gap: 8px;
+
+  // .form-title {
+  //   @include typo(16px, 400, 24px, $dark-color);
+  // }
+
+  .form-control {
+    @include size(258px, 44px);
+    padding: 10px 16px;
+    @include border-radius(10px);
+    @include border(1px, solid, $secondary-color);
+    background: $white-color;
+    @include typo(16px, 400, 24px, $secondary-color);
+    &.empty {
+      border: 1px solid $primary-color;
+    }
+  }
+
+  // Apply red border when empty
+}

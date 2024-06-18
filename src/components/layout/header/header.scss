@@ -1,0 +1,66 @@
+@import '../../../styles/styles.scss';
+
+header {
+    padding: 18px 15px;
+
+    .container {
+        @include flexbox(flex, space-between, center, row);
+        @include size(1300px, 44px);
+
+        input {
+            @include size(360px, 44px);
+            padding: 10px 16px;
+            @include border-radius(10px);
+            @include border(1px, solid, $light-color);
+            background: $light-color;
+            @include typo(16px, 400, 24px, $secondary-color);
+            font-family: $font-family;
+        }
+
+        .header-panel {
+            @include flexbox(flex, center, center, row);
+            column-gap: 40px;
+
+            .header-notifi {
+                transform: translate(0%, 25%);
+
+                img {
+                    @include size(25px);
+                }
+
+                .header-number {
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    transform: translate(50%, -160%);
+
+                    span {
+                        position: absolute;
+                        right: 12px;
+                        bottom: 7px;
+                        @include typo(12px, 600, normal, $white-color);
+                    }
+
+                    img {
+                        @include size(20px);
+                    }
+                }
+            }
+
+            .header-account {
+                @include flexbox(flex, center, center, row);
+                column-gap: 8px;
+
+                .header-acc {
+                    span {
+                        @include typo(12px, 400, normal, $secondary-color);
+                    }
+
+                    p {
+                        @include typo(16px, 600, normal, $dark-color);
+                    }
+                }
+            }
+        }
+    }
+}

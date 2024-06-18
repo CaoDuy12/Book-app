@@ -1,0 +1,77 @@
+@import '../../../../styles/styles.scss';
+
+.book-information {
+  padding: 30px 40px;
+  @include border-radius(20px);
+  background: $white-color;
+
+  .form-container {
+    width: 1150px;
+    @include flexbox(flex, flex-start, flex-start, column);
+    row-gap: 30px;
+
+    h2 {
+      // @include typo(24px, 600, normal, $black-color);
+      color: $black-color;
+    }
+
+    form {
+      @include flexbox(flex, flex-start, flex-start, column);
+      row-gap: 24px;
+
+      .form {
+        @include flexbox(flex, flex-start, flex-start, row);
+        column-gap: 40px;
+        div {
+          p {
+            margin-top: 5px;
+
+            text-align: left;
+            font-family: $font-family;
+
+            font-style: normal;
+
+            @include typo(12px, 400, 18px, $primary-color);
+          }
+        }
+      }
+
+      // .btn-control {
+      //     @include flexbox(flex, flex-start, flex-start, row);
+      //     column-gap: 10px;
+
+      // button {
+      //     padding: 12px 30px;
+      //     @include border-radius(10px);
+      //     @include border(0, solid, transparent);
+      //     cursor: pointer;
+      .btn-save_cancel {
+        display: flex;
+
+        column-gap: 10px;
+        .btn-save {
+          padding: 12px 30px;
+          @include border-radius(10px);
+          @include border(0, solid, transparent);
+          cursor: pointer;
+          @include size(172px, 42px);
+          background: $primary-color;
+          @include typo(16px, 500, normal, $white-color);
+        }
+        .btn-cancel {
+          padding: 12px 30px;
+          @include border-radius(10px);
+          @include border(0, solid, transparent);
+          cursor: pointer;
+          @include size(116px, 42px);
+          opacity: 0.5;
+          background: $light-color;
+          @include typo(16px, 500, normal, $dark-color);
+        }
+      }
+
+      //     }
+      // }
+    }
+  }
+}

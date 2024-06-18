@@ -1,0 +1,30 @@
+@import '../../../styles/styles.scss';
+
+.sidebar {
+  padding: 18px 10px;
+
+  .container {
+    @include flexbox(flex, center, center, column);
+
+    width: 60px;
+
+    h2:first-child {
+      @include typo(18px, 700, normal, $dark-color);
+      text-transform: uppercase;
+      padding: 10px 0;
+    }
+
+    img:nth-child(n + 2):nth-child(-n + 7) {
+      padding: 10px;
+      @include border-radius(10px);
+    }
+
+    img:nth-child(3) {
+      background: $primary-color;
+    }
+
+    img:last-child {
+      margin-top: 80px;
+    }
+  }
+}

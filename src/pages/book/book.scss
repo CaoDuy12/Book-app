@@ -1,0 +1,65 @@
+@import '../../styles/styles.scss';
+
+.book {
+  padding: 40px 50px;
+  @include border-radius(30px);
+  background: $light-color;
+
+  .book-container {
+    width: 1230px;
+    @include flexbox(flex, none, flex-start, column);
+    row-gap: 40px;
+
+    .book-intro {
+      @include flexbox(flex, none, flex-start, column);
+      row-gap: 10px;
+
+      .book-welcome {
+        display: flex;
+        .book-welcome-title {
+          @include typo(30px, 700, normal, $dark-color);
+        }
+
+        // span:last-child {
+        //   @include typo(30px, 700, normal, red);
+        // }
+      }
+
+      p {
+        @include typo(18px, 500, normal, $dark-color);
+      }
+    }
+  }
+}
+
+.delete-title {
+  @include typo(20px, 500, 30px, $black-color);
+}
+
+.delete-text {
+  @include typo(20px, 700, 30px, $black-color);
+}
+
+.delete-button {
+  padding: 12px 30px !important;
+  border-radius: 10px !important;
+  background: $primary-color !important;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  @include size(114px, 42px);
+  @include typo(16px, 500, 0px, $white-color);
+
+  &:hover {
+    opacity: 0.5;
+  }
+}
+
+.cancel-button {
+  padding: 12px 30px !important;
+  border-radius: 10px !important;
+  background: $light-color !important;
+  @include size(116px, 42px);
+  @include typo(16px, 500, 0px, $dark-color);
+  color: $dark-color !important;
+}

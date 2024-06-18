@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.book {
+  padding: 40px 50px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background: #F8F9FA;
+}
+.book .book-container {
+  width: 1230px;
+  display: flex;
+  justify-content: none;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 40px;
+}
+.book .book-container .book-intro {
+  display: flex;
+  justify-content: none;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 10px;
+}
+.book .book-container .book-intro .book-welcome span {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: normal;
+  color: #0C131B;
+}
+.book .book-container .book-intro .book-welcome span:last-child {
+  color: #F05697;
+}
+.book .book-container .book-intro p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: normal;
+  color: #0C131B;
+}/*# sourceMappingURL=book.css.map */

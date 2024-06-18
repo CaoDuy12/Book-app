@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+.book-information {
+  padding: 30px 40px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background: #FFF;
+}
+.book-information .form-container {
+  width: 1150px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 30px;
+}
+.book-information .form-container h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: normal;
+  color: #000;
+}
+.book-information .form-container form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.book-information .form-container form .form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+.book-information .form-container form .form div p {
+  margin-top: 5px;
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #F05697;
+}
+.book-information .form-container form .btn-save_cancel {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.book-information .form-container form .btn-save_cancel .btn-save {
+  padding: 12px 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 0 solid transparent;
+  cursor: pointer;
+  width: 172px;
+  height: 42px;
+  background: #F05697;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  color: #FFF;
+}
+.book-information .form-container form .btn-save_cancel .btn-cancel {
+  padding: 12px 30px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 0 solid transparent;
+  cursor: pointer;
+  width: 116px;
+  height: 42px;
+  opacity: 0.5;
+  background: #F8F9FA;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  color: #0C131B;
+}/*# sourceMappingURL=form.css.map */

@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  padding: 18px 15px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 1300px;
+  height: 44px;
+}
+header .container input {
+  width: 360px;
+  height: 44px;
+  padding: 10px 16px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #F8F9FA;
+  background: #F8F9FA;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #898989;
+  font-family: "Montserrat", sans-serif;
+}
+header .container .header-panel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+header .container .header-panel .header-notifi {
+  transform: translate(0%, 25%);
+}
+header .container .header-panel .header-notifi img {
+  width: 25px;
+  height: 25px;
+}
+header .container .header-panel .header-notifi .header-number {
+  position: relative;
+  top: 0;
+  left: 0;
+  transform: translate(50%, -160%);
+}
+header .container .header-panel .header-notifi .header-number span {
+  position: absolute;
+  right: 12px;
+  bottom: 7px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: normal;
+  color: #FFF;
+}
+header .container .header-panel .header-notifi .header-number img {
+  width: 20px;
+  height: 20px;
+}
+header .container .header-panel .header-account {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+}
+header .container .header-panel .header-account .header-acc span {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: normal;
+  color: #898989;
+}
+header .container .header-panel .header-account .header-acc p {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  color: #0C131B;
+}/*# sourceMappingURL=header.css.map */

@@ -1,0 +1,37 @@
+@mixin typo($fontSize, $fontWeight, $lineHeight, $color) {
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    line-height: $lineHeight;
+    color: $color;
+}
+
+@mixin box-shadow($x, $y, $blur, $spread, $color) {
+    box-shadow: $x $y $blur $spread $color;
+}
+
+@mixin border-radius($all: null, $tl: $all, $tr: $all, $btl: $all, $btr: $all) {
+    border-top-left-radius: $tl;
+    border-top-right-radius: $tr;
+    border-bottom-right-radius: $btr;
+    border-bottom-left-radius: $btl;
+}
+
+@mixin size($width, $height: $width) {
+    width: $width;
+    height: $height;
+}
+
+@mixin border($width, $style, $color) {
+    border: $width $style $color;
+}
+
+@mixin transition($transition: all ease-in-out .3s){
+	transition: $transition;
+}
+
+@mixin flexbox($display, $justifyContent, $alignItem, $flexDirection) {
+    display: $display;
+    justify-content: $justifyContent;
+    align-items: $alignItem;
+    flex-direction: $flexDirection;
+}
